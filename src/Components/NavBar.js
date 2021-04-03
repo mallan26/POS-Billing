@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Route, withRouter } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import Home from '../Components/User-Components/Home'
+import Home from '../Components/User-Components/Home' 
 import Register from './User-Components/Register'
 import SignIn from './User-Components/SignIn'
 import Account from './User-Components/Account'

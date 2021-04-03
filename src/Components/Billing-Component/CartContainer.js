@@ -18,7 +18,7 @@ export default function CartContainer(props){
         const exist = cartItems.find(ele=>ele._id === product._id)
         if(exist){
             setCartItems(
-                cartItems.map(ele=>ele._id === product._id ? {...ele, quantity : exist. quantity+1} : ele)
+                cartItems.map(ele=>ele._id === product._id ? {...ele, quantity : exist.quantity+1} : ele)
             )
         } else {
             setCartItems([...cartItems, {...product, quantity: 1}])
@@ -44,7 +44,6 @@ export default function CartContainer(props){
     }
     return (
         <div> 
-            <h4> Cart Items </h4>
             <ProductsPurchase addItem={addItem}/>
             <Cart cartItems={cartItems} addItem={addItem} handleCheckOut={handleCheckOut}
             removeItem={removeItem} CustomerId={id}/>

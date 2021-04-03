@@ -5,7 +5,7 @@ import BillForm from './BillingForm'
 import BillList from './BillList'
 
 export default function BillContainer(props) {
-    const {CustomerId} = props.location
+    const {Customerid} = props.location
     const dispatch = useDispatch()
     const Items = useSelector((state) => {
         return state.cartItems
@@ -17,7 +17,7 @@ export default function BillContainer(props) {
     return (
         <div>
             <h2> Bill Component </h2>
-            <BillForm Items={Items} CustomerId={CustomerId}/>
+            <BillForm Items={Items} Customerid={Customerid}/>
             <BillList/>
         </div>
     )

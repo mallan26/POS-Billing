@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import ProductsItem from './ProductsItem'
 
 export default function ProductsPurchase({addItem}) {
     
@@ -10,8 +11,7 @@ export default function ProductsPurchase({addItem}) {
             {
                 products.map(ele=> {
                     return <ProductsItem key={ele._id} product={ele} addItem={addItem}/>
-                    })
-                })
-        </div>
-    )
+                    }) }
+                </div>
+                )
 }
