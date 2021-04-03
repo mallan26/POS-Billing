@@ -3,8 +3,8 @@ import axios from 'axios'
 import validator from 'validator'
 import {Box, Typography, Container, Button, Paper, TextField, InputAdornment} from '@material-ui/core'
 import {makeStyles} from "@material-ui/core/styles"
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import EmailIcon from '@material-ui/icons/Email';
+//import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import EmailIcon from '@material-ui/icons/Email';  
 import LockIcon from '@material-ui/icons/Lock';
 
 
