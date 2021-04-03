@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import {startPostBill} from '../../Actions/Bill-Action'
 import { useDispatch } from 'react-redux';
 
-export default function BillForm ({CustomerId, Items}) {
+export default function BillForm ({Customerid, Items}) {
     const dispatch = useDispatch()
 
     const [date, setDate] = useState('')
-    const [customerId, setCustomerId] = useState(CustomerId ? CustomerId : '')
-    console.log("customer id", CustomerId);
+    const [customerId, setCustomerId] = useState(Customerid ? Customerid : '')
+    console.log("customer id", Customerid);
 
     const handleChange = (e) => {
         const input = e.target.name
@@ -55,7 +55,7 @@ export default function BillForm ({CustomerId, Items}) {
                        placeholder="customers"
                        name="id"/> <br/>
 
-            <input type="submit" value="submit"/>
+            <input type="submit" value="Generate"/>
 
             </form>
         </div>
